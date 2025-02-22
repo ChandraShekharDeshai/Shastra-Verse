@@ -12,7 +12,7 @@ html {
 }
 
 
-body {
+/* body {
     min-height: 100vh;
     background-image: url(Elements/WhatsApp\ Image\ 2025-02-21\ at\ 17.43.34_7ec5ea4f.jpg); 
     
@@ -27,7 +27,7 @@ body::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
-}
+} */
 .title {
     background: linear-gradient(45deg, royalblue ,greenyellow, orangered);
     -webkit-background-clip: text;
@@ -48,7 +48,26 @@ body::before {
     animation: fadeInUp 1s ease forwards;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full-page height */
+    background: linear-gradient(270deg, #13092f, #000000, #0f0726);
+    background-size: 400% 400%;
+    animation: bwGradient 10s ease infinite;
+}
 
+@keyframes bwGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 /* Navbar */
@@ -175,7 +194,7 @@ nav p span {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .card {
     transition: transform 0.3s ease;
@@ -183,6 +202,26 @@ nav p span {
 
 .card:hover {
     transform: perspective(1000px) rotateY(5deg) translateZ(10px);
+}
+.card {
+    width: 300px; /* Card dimensions */
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
+    color: white;
+    text-align: center;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px) perspective(1000px) rotateY(5deg) translateZ(10px);;
+    transition: all 0.3s ease;
 }
 
 
