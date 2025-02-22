@@ -129,6 +129,10 @@ nav p span {
     width: 100%;
     height: auto;
 }
+.intro{
+    color: white;
+
+}
 
 .container .card {
     padding: 5px;
@@ -186,6 +190,7 @@ h3{
 }
 .para p{
     color: gold;
+    font-weight: 700;
 }
 
 /* Bootstrap Responsive Fixes */
@@ -212,6 +217,10 @@ h3{
         align-items: center;
         width: 90%;
         margin: auto;
+    }
+
+    .container .card{
+        padding-bottom: 30px;
     }
 
     .titleimage {
