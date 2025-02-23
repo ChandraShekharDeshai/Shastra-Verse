@@ -288,7 +288,42 @@ h3{
     color: #a16cf0;
 
 }
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    position: relative;
+}
 
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    padding-right: 40px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: purple;
+    box-shadow: 0 0 5px rgba(128, 0, 128, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #666;
+}
+
+/* Hide cards when filtered out */
+.card.hidden {
+    display: none;
+}
 
 
 /* Bootstrap Responsive Fixes */
