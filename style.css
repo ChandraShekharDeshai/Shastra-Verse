@@ -207,6 +207,39 @@ nav p span {
     transform: translateY(-5px) perspective(1000px) rotateY(5deg) translateZ(10px);;
     transition: all 0.3s ease;
 }
+/* Glow Effect on Hover */
+.card:hover {
+    box-shadow: 0 0 20px rgba(173, 216, 230, 0.8);
+}
+
+/* Neon Border Animation */
+@keyframes neon-border {
+    0% { border-color: #ff00ff; }
+    50% { border-color: #00ffff; }
+    100% { border-color: #ff9100; }
+}
+
+.card {
+    border: 2px solid transparent;
+    animation: neon-border 3s infinite alternate;
+}
+
+/* Button Glow Effect */
+.glow-button {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    box-shadow: 0 0 10px #ff416c;
+    transition: box-shadow 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px #ff4b2b;
+}
+
 
 
 
