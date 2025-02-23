@@ -13,10 +13,10 @@ html {
 
 
 
-/* body {
+body {
     min-height: 100vh;
     background-image: url(Elements/WhatsApp\ Image\ 2025-02-21\ at\ 17.43.34_7ec5ea4f.jpg); 
-    
+    /* overflow-x: hidden; */
   
 }
 body::before {
@@ -28,7 +28,7 @@ body::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
-} */
+}
 .title {
     background: linear-gradient(45deg, royalblue ,greenyellow, orangered);
     -webkit-background-clip: text;
@@ -49,26 +49,7 @@ body::before {
     animation: fadeInUp 1s ease forwards;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh; 
-    background: linear-gradient(270deg, #13092f, #000000, #13092f);
-    background-size: 400% 400%;
-    animation: bwGradient 10s ease infinite;
-}
 
-@keyframes bwGradient {
-    0% {
-        background-position: 0% 50%;    
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 
 /* Navbar */
@@ -176,7 +157,8 @@ nav p span {
     margin-top: 110px;
     width: 100%;
     height: auto;
-    margin: 50px;
+    margin: 0px;
+    margin-bottom: 30px;
  
 }
 .intro{
