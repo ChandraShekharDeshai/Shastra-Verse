@@ -234,6 +234,63 @@ h3{
     font-weight: 700;
 }
 
+/* About Us Container */
+.abtcontainer {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content */
+    padding: 50px 20px; /* Adding padding for better spacing */
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glowing shadow */
+}
+
+/* About Us Heading */
+.abtheading {
+    font-size: 3rem; /* Large heading */
+    font-weight: 700; /* Bold font */
+    color: #a16cf0; /* Attractive violet tone */
+    margin-bottom: 30px; /* Space below heading */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Capitalized heading */
+    letter-spacing: 2px; /* Space between letters */
+}
+
+/* About Us Content */
+.abtcontent {
+    max-width: 900px; /* Limit text width for better readability */
+    line-height: 2; /* Increased line spacing */
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    color: white; /* White text for contrast */
+    text-align: justify; /* Neat block alignment */
+    word-spacing: 2px; /* Add subtle spacing between words */
+}
+
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content */
+    padding: 50px 20px; /* Adding padding for better spacing */
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glowing shadow */
+}
+.contact-info{
+    max-width: 900px; /* Limit text width for better readability */
+    line-height: 2; /* Increased line spacing */
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    color: white; /* White text for contrast */
+    text-align: justify; /* Neat block alignment */
+    word-spacing: 2px; /* Add subtle spacing between words */
+}
+.contact{
+    color: #a16cf0;
+
+}
+
+
+
 /* Bootstrap Responsive Fixes */
 @media (max-width: 945px) {
     .menubutton{
@@ -293,8 +350,16 @@ h3{
         width: 50px;
         height: auto;
     }
-
+    .abtheading {
+        font-size: 2.5rem; /* Smaller heading on small screens */
+    }
+    .abtcontent {
+        font-size: 1rem; /* Adjust content font size */
+        line-height: 1.8; /* Tighter line spacing */
+    }
 }
+
+
 
 @media (max-width: 400px) {
     .sidebar {
